@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background-image: url(/img/corrida.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(238, 228, 228, 0.583);
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.885)
+}
+
+#titulo {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.fig-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    margin-top: 3px;
+    font-weight: 500;
+    background: #e8bf7394;
+}
+
+.fig-input span,
+.fig-input i {
+    font-size: 1.3;
+    font-weight: 600;
+}
+
+.fig-input input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 545;
+}
+
+.fig-input input::-webkit-outer-spin-button,
+.fig-input input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.fig-input input:focus {
+    outline: none;
+}
+
+#calcular {
+    border: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: #a88036d5;
+    padding: 0.5rem 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#calcular:hover {
+    background: #af7c1cd5;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    height: 11vh;
+    flex-wrap: nowrap;
+    border-top: 2px solid #a88036d5;
+}
+
+#resultado-numerico {
+    display: flex;
+    text-align: center;
+}
+
+#resultado-numerico span#valor {
+    font-size: 2rem;
+    font-weight: 540;
+}
+
+#resultado-classificacao {
+    display: flex;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#descricao {
+    font-size: 1.3rem;
+}
+
+#descricao span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.normal {
+    color: black;
+    font-weight: 600;
+}
+
+.grave {
+    animation: pisca 0.8s infinite;
+}
+
+@keyframes pisca {
+    0% {
+        color: rgb(113, 28, 28);
+    }
+
+    50% {
+        color: transparente;
+    }
+
+    100% {
+        color: #dc2626;
+    }
+}
+
+/* Adicionando para ajustar o tamanho do texto em telas menores */
+@media screen and (max-width: 600px) {
+    #form {
+        padding: 1rem;
+        height: auto;
+    }
+}
+
+/* Adicionando para ajustar o tamanho do texto em telas menores */
+@media screen and (max-width: 400px) {
+    #titulo {
+        font-size: 2rem;
+    }
+    
+    #descricao {
+        font-size: 1.2rem;
+    
+    
+    
+    }
+    
+
+
+}
